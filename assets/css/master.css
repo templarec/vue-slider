@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.gallery img {
+  width: 600px;
+  border-radius: 25px;
+}
+.next, .prev {
+  font-size: 30px;
+  height: 100%;
+  margin: 0 15px;
+}
+i.active {
+  color: lime;
+}
+nav i {
+  font-size: 18px;
+  color: darkgreen;
+  padding: 0 3px;
+}
