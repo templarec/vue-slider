@@ -34,3 +34,6 @@ var app = new Vue (
     }
   }
 );
+setInterval(function() {
+  app.next();
+}, 3000);
