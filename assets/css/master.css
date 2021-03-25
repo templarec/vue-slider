@@ -4,11 +4,31 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+body {
+  height: 100vh;
+}
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.overlay h1{
+  color: #fff;
+}
+.show {
+  display: flex;
+}
 #root {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 .slider {
   width: 50vw;
@@ -24,7 +44,6 @@
 }
 .next, .prev {
   font-size: 30px;
-  height: 100%;
   margin: 0 15px;
 }
 i.active {

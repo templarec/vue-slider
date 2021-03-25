@@ -11,10 +11,19 @@ var app = new Vue (
         "./assets/img/mainecoon.png",
         "./assets/img/scottish.png",
         "./assets/img/sphynx.jpg"
-      ]
+      ],
+      overlay: ""
     },
     methods: {
-      next: function () {
+      next: function (event) {
+        if (event && event.type === "click") {
+          clearInterval(timer);
+          this.overlay = "show";
+          setTimeout(()=>{
+            this.overlay ="";
+          },2000);
+          console.log("Autoplay stopped...");
+        }
         if (this.index < this.images.length -1) {
           this.index++;
         } else {
