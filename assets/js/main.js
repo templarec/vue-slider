@@ -34,6 +34,6 @@ var app = new Vue (
     }
   }
 );
-setInterval(function() {
+var timer = setInterval(function() {
   app.next();
 }, 3000);
